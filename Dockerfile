@@ -12,7 +12,7 @@ RUN apt-get update && \
     pip install shadowsocks==2.8.2 && \
     rm -rf /var/lib/apt/lists/*
 
-ENV MODE="ssserver" \
+ENV MODE="server" \
     SERVER="127.0.0.1" \
     SERVER_PORT="8388" \
     PASSWORD="youpassword" \
@@ -21,4 +21,4 @@ ENV MODE="ssserver" \
 
 
 # Configure container to run as an executable
-ENTRYPOINT ["/usr/local/bin/$MODE -s $SERVER -p $SERVER_PORT -k $PASSWORD -m $METHOD"]
+ENTRYPOINT ["/usr/local/bin/"$MODE" -s "$SERVER" -p "$SERVER_PORT" -k "$PASSWORD" -m "$METHOD]
