@@ -21,4 +21,4 @@ ENV MODE="server" \
 
 
 # Configure container to run as an executable
-ENTRYPOINT ["/usr/local/bin/"$MODE" -s "$SERVER" -p "$SERVER_PORT" -k "$PASSWORD" -m "$METHOD]
+CMD ["/usr/local/bin/"$MODE" -s "$SERVER" -p "$SERVER_PORT" -k "$PASSWORD" -m "$METHOD]
