@@ -3,7 +3,7 @@
 # Based on aliyun-ubuntu:14.04 trusty
 ############################################################
 
-FROM index.alauda.cn/nunchuk/aliyun-ubuntu:14.04
+FROM nunchuk/aliyun-ubuntu:14.04
 MAINTAINER XinYe <nunchuk@live.com>
 
 ENV SS_VERSION=2.8.2
