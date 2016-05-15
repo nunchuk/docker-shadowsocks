@@ -11,7 +11,7 @@ This Docker image is build from the Shadowsocks-python v2.8.2, based on [aliyun-
 ## Quick start Shadowsocks server using:
 
 ```
-docker run shadowsocks-server -d \
+docker run --name shadowsocks-server -d \
     --publish 8388:8388 \
     --env 'PASSWORD=you-password' \
     --restart=always \
@@ -24,7 +24,7 @@ docker run shadowsocks-server -d \
 Assuming that the Shadowsocks server host is 192.168.1.100
 
 ```
-docker run shadowsocks-client -d \
+docker run --name shadowsocks-client -d \
     --publish 1080:1080 \
     --env 'SERVER_ADDR=192.168.1.100' \
     --env 'PASSWORD=you-password' \
