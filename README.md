@@ -16,7 +16,7 @@ docker run shadowsocks-server -d \
     --env 'PASSWORD=you-password' \
     --restart=always \
     --user=nobody
-    nunchuk/shadowsocks:2.8.2-python-server
+    nunchuk/shadowsocks:python-2.8.2-server
 ```
 
 ## Quick start Shadowsocks client using:
@@ -30,7 +30,7 @@ docker run shadowsocks-client -d \
     --env 'PASSWORD=you-password' \
     --restart=always \
     --user=nobody
-    nunchuk/shadowsocks:2.8.2-python-client
+    nunchuk/shadowsocks:python-2.8.2-client
 ```
 
 ## Configuration Parameters
@@ -60,7 +60,7 @@ You can adjust the configuration of the shadowsocks instance by passing one or m
   
 ### You can use a configuration file instead of environment variables.
   
-`docker run nunchuk/shadowsocks:2.8.2-server ssserver -c ./shadowsocks.json
+`docker run nunchuk/shadowsocks:python-2.8.2-server ssserver -c ./shadowsocks.json
 `
 
 Contributors
