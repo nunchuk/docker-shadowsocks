@@ -39,7 +39,6 @@ You can adjust the configuration of the shadowsocks instance by passing one or m
 
 ### Shadowsocks server
 
-* `CONFIG`			path to config file
 * `SERVER_ADDR`	server address, default: 0.0.0.0
 * `SERVER_PORT`	server port, default: 8388
 * `PASSWORD`		password used for encryption
@@ -56,8 +55,7 @@ You can adjust the configuration of the shadowsocks instance by passing one or m
 * `PASSWORD`		password used for encryption
 * `METHOD`			encryption method, default: aes-256-cfb. else rc4-md5
 * `TIMEOUT`		timeout in seconds, default: 300
-* `WORKERS`		number of spawning child processes
-  
+
 ### You can use a configuration file instead of environment variables.
   
 `docker run nunchuk/shadowsocks:python-2.8.2-server ssserver -c ./shadowsocks.json
