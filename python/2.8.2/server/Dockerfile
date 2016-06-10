@@ -14,6 +14,10 @@ RUN apt-get update && \
     pip install shadowsocks==$SS_VERSION && \
     rm -rf /var/lib/apt/lists/*
 
+# Optimizing server
+COPY local.conf /etc/sysctl.d/30-local.conf
+RUN ulimit -n 51200
+
 # configure environments
 ENV SERVER_ADDR=0.0.0.0 \
     SERVER_PORT=8388 \
