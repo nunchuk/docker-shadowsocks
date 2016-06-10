@@ -3,7 +3,7 @@
 
 # Shadowsocks Dockerized
 
-This Docker image is build from the Shadowsocks-python v2.8.2, based on [aliyun-ubuntu v14.04](https://github.com/nunchuk/aliyun-ubuntu).
+This Docker image is build from the Shadowsocks-python v2.8.2, based on [aliyun-ubuntu v14.04](https://github.com/nunchuk/aliyun-ubuntu), and system was [optimizing](https://github.com/shadowsocks/shadowsocks/wiki/Optimizing-Shadowsocks).
 
 * `python-2.8.2-server`
 * `python-2.8.2-client`
